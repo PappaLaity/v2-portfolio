@@ -12,7 +12,7 @@ export default {
         :alt="client.title"
         class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-lg mb-4 cursor-pointer dark:bg-secondary-light"
     />
-    <span class="text-white">
+    <span class="text-ternary-dark dark:text-ternary-light">
       {{ client.description }}
     </span>
     <!--    </a>-->
