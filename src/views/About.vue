@@ -3,10 +3,12 @@ import AboutMe from '@/components/about/AboutMe';
 import AboutCounter from '@/components/about/AboutCounter';
 // import AboutServices from '@/components/about/AboutServices.vue';
 import feather from 'feather-icons';
+import Skills from "@/components/about/Skills.vue";
 
 export default {
   name: 'About',
   components: {
+    Skills,
     AboutMe,
     AboutCounter,
     // AboutServices,
@@ -36,7 +38,8 @@ export default {
 
     <!-- About counter -->
     <div class="container mx-auto">
-<!--      <AboutServices/>-->
+      <!--      <AboutServices/>-->
+      <skills></skills>
     </div>
   </div>
 </template>
