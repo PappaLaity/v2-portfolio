@@ -3,7 +3,7 @@ export default {
   data: () => {
     return {
       copyrightDate: new Date().getFullYear(),
-      projectName: 'Web Portfolio',
+      projectName: 'Portfolio',
       author: 'Pappalaity',
     };
   },
@@ -23,11 +23,11 @@ export default {
       >
         {{ projectName }}
       </a>
-      . Made by
+      .
       <a
           href="#"
           target="__blank"
-          class="font-general-medium text-secondary-dark dark:text-secondary-light uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
+          class="font-general-medium text-secondary-dark dark:text-secondary-light capitalize hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
       >{{ author }}</a
       >
     </div>
