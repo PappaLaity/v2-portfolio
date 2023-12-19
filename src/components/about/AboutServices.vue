@@ -8,33 +8,39 @@ export default {
   data: () => {
     // Check image for 225X225
     return {
-      // Kind of Realisation that i Can do instead of Client
+      // Kind of Realisation that I Can do instead of Client
       clientsHeading: 'Services',
       clients: [
         {
           id: 1,
           title: 'Web',
           img: require('@/assets/images/brands/web.png'),
-          description: "Description de ce que j'ai faire sur le web"
+          description: `Gestion et Mise en place de plateforme web. De l'Analyse des besoins
+              à la livraison, Maintenance & Suivi. \n
+               Front End: (Html, CSS, Js - Vue 3)
+               Back End: (PHP, Laravel - JEE)`
         },
         {
           id: 2,
           title: 'Mobile',
           img: require('@/assets/images/brands/mobile.png'),
-          description: "Description de ce que j'ai faire sur le Mobile"
+          description: "Conception et Integration Application Mobile." +
+              "Natif: JAVA, Kotlin - Cross Platform: Flutter (DART)"
         },
         {
           id: 3,
           title: 'Intelligence Artificielle',
           img: require('@/assets/images/brands/ia.png'),
-          description: "Description de ce que j'ai faire sur l'IA"
+          description: "Mise en place de Structure De Donnees, " +
+              "Traitement de Donnees et Extraction de Connaissances (Python)"
 
         },
         {
           id: 4,
           title: 'Internet des Objets',
           img: require('@/assets/images/brands/iot.png'),
-          description: "Description de ce que j'ai faire sur l'IoT"
+          description: "Decouvertes des Technologies IoT. Experimentation de Capteurs " +
+              "et Deploiement sur le Reseau LoRa"
 
         }
       ],

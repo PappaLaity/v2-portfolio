@@ -1,6 +1,20 @@
 <script>
+
+import skills from "@/data/skills";
+import SkillsSingle from "@/components/about/SkillsSingle.vue";
+
 export default {
-  name: "Skills"
+  name: "Skills",
+  components: {SkillsSingle},
+  data: () => {
+    return {
+      languages: skills.languages,
+      framework: skills.framework,
+      database: skills.database,
+      tools: skills.tools,
+      os: skills.OS
+    }
+  },
 }
 </script>
 
@@ -12,67 +26,44 @@ export default {
     </div>
     <div>
       <div class="px-2 py-2 text-start">
-        <span class="font-bold text-2xl font-sans">Language</span>
+        <span class="font-bold text-2xl font-sans">{{ languages.title }}</span>
       </div>
       <ul class="grid grid-cols-6 gap-2 px-1 pt-2">
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Alex</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/women/11.jpg" alt=""
-               class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Sarah</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Jericho</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/women/28.jpg" alt=""
-               class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Dianna</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibol">Bernard</h5>
-        </li>
+        <SkillsSingle v-for="language in languages.list" :key="language.id" :skill="language"/>
       </ul>
     </div>
     <div>
       <div class="px-2 py-2 text-start">
-        <span class="font-bold text-2xl font-sans">Framework</span>
+        <span class="font-bold text-2xl font-sans">{{ framework.title }}</span>
       </div>
       <ul class="grid grid-cols-6 gap-2 px-1 pt-2">
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Alex</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/women/11.jpg" alt=""
-               class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Sarah</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Jericho</h5>
-        </li>
+        <SkillsSingle v-for="frame in framework.List" :key="frame.id" :skill="frame"/>
       </ul>
     </div>
     <div>
       <div class="px-2 py-2 text-start">
-        <span class="font-bold text-2xl font-sans">Tools</span>
+        <span class="font-bold text-2xl font-sans">{{ database.title }}</span>
       </div>
       <ul class="grid grid-cols-6 gap-2 px-1 pt-2">
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Alex</h5>
-        </li>
-        <li class="flex items-center flex-col">
-          <img src="https://randomuser.me/api/portraits/women/11.jpg" alt=""
-               class="rounded-full w-16 h-16 object-cover">
-          <h5 class="font-semibold">Sarah</h5>
-        </li>
+        <SkillsSingle v-for="db in database.List" :key="db.id" :skill="db"/>
+      </ul>
+    </div>
+    <div>
+      <div class="px-2 py-2 text-start">
+        <span class="font-bold text-2xl font-sans">{{ tools.title }}</span>
+      </div>
+      <ul class="grid grid-cols-6 gap-2 px-1 pt-2">
+        <SkillsSingle v-for="tool in tools.List" :key="tool.id" :skill="tool"/>
+
+      </ul>
+    </div>
+
+    <div>
+      <div class="px-2 py-2 text-start">
+        <span class="font-bold text-2xl font-sans">{{ os.title }}</span>
+      </div>
+      <ul class="grid grid-cols-6 gap-2 px-1 pt-2">
+        <SkillsSingle v-for="system in os.List" :key="system.id" :skill="system"/>
       </ul>
     </div>
   </div>
