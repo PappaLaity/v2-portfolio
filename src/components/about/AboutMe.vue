@@ -6,12 +6,20 @@ export default {
         {
           id: 1,
           bio:
-              'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
+              "Hi Guys, I'm Papa laity NDIAYE (Pappa Laity). I'm a software engineer. " +
+              "I am passionate about Information and Communication Technologies.  " +
+              "I am constantly looking for new knowledge in various fields of IT. " +
+              "I try to contribute in one way or another to the development of my community that I love to serve. " +
+              "I love basketball, swimming, expeditions and above all being in communion with nature",
+
         },
         {
           id: 2,
           bio:
-              'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
+              "Graduated in Software Engineering and Data Management. I have acquired experience over time by occupying various positions. " +
+              "Through various past companies, I gained experience in Front End and Back End Development mainly using language such as PHP, Javascript, JAVA. " +
+              "Likewise with researchers and my own curiosity I acquired expertise in the field of research, particularly on Artificial Intelligence (AI) and the Internet of Things (IoT)." +
+              "In addition to this, I acquire over time more leadership in project management, teamwork and problem solving.",
         },
       ],
     };

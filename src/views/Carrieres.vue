@@ -12,14 +12,13 @@ export default {
 </script>
 
 <template>
-  <div class=" container mx-auto">
-
-    <div class="grid sm:grid sm:grid-cols-2 sm:gap-2">
+  <div>
+    <div class=" container mx-auto">
       <Jobs/>
+    </div>
+    <div class="container mx-auto">
       <Etudes/>
     </div>
-    <!-- Banner -->
-    <!-- Section Entreprise - Project et Skills   -->
   </div>
 </template>
 
