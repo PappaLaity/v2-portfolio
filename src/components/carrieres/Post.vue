@@ -1,57 +1,66 @@
 <script>
 export default {
   name: "Post",
-  props: ["post"]
+  props: ["post"],
 }
 </script>
 
 <template>
+  <div
+      class="bg-gray-50 dark:bg-ternary-dark hover:bg-blue-200 dark:hover:bg-gray-600 hover:cursor-pointer rounded-lg pb-4">
+    <div class="text-ternary-dark dark:text-ternary-light">
+      <div class="mt-6 px-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center justify-start pt-4">
+            <div>
+              <a :href="post.link_company" target="_blank"
+              ><img
+                  :src="post.logo_company"
+                  class="w-12 rounded-full"
+                  alt="Logo"
+              />
+              </a>
+            </div>
+            <div class="text-start pt-2 mx-4">
+              <div class="text-2xl">{{ post.title }}</div>
+              <div class="text-sm italic">
+                {{ post.lieu }}
+              </div>
+            </div>
+          </div>
+          <div class="text-start pl-16 pt-4 italic">
+            {{ post.periode }}
+          </div>
+        </div>
+        <div class="mb-4 pl-16 text-start">
 
-    <div class="relative w-full">
+          <!--  Description-->
+          <p>
+            {{ post.description }}
+          </p>
+          <!--  Liste des Taches-->
+          <ul class=" mt-3">
+            <li v-for="rol in post.role" :key="rol.id"
+            >
+              {{ rol.libelle }}
+            </li>
+          </ul>
+          <!--   Outils Utilises (ships)   -->
+          <div>
+            <p class="py-2 space-x-1 space-y-1">
+              <span
+                  v-for="tips in post.skills" :key="tips.id"
+                  class="inline-block px-2 py-1 rounded-lg bg-gray-300 dark:bg-gray-800"
+              >{{ tips.tip }}
+              </span>
+            </p>
+          </div>
+        </div>
 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-           class="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-blue-500">
-        <path fill-rule="evenodd"
-              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-              clip-rule="evenodd"/>
-      </svg>
-      <div class="ml-6 mt-6">
-        <h4 class="font-bold text-blue-500 text-start">{{ post.title }}</h4>
-        <p class="mt-2 max-w-screen-sm text-sm text-gray-500">{{ post.description }}</p>
-        <span class="mt-1 block text-sm font-semibold text-blue-500">{{ post.periode }}</span>
       </div>
-    </div>
 
-  <!--    <div class="relative max-w-sm">-->
-<!--  <div class="relative max-full text-ternary-dark dark:text-ternary-light">-->
-<!--    <div class="mt-6 border-l-4 border-dotted px-4">-->
-<!--      <div class="text-start mb-2 pt-2">-->
-<!--        &lt;!&ndash;        Ajouter une hauteur un padding y une couleur &ndash;&gt;-->
-<!--        Poste du profil-->
-<!--      </div>-->
-<!--      <div class="flex items-center justify-between py-2 px-3">-->
-<!--        <div>-->
-<!--          Entreprise & lien(site Institutionnel)-->
-<!--        </div>-->
-<!--        <div>-->
-<!--          Periode-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash;  Description&ndash;&gt;-->
-<!--      <p class="text-start">-->
-<!--        Lorem ipsum dolor sit amet consectetur, adipisicing elit Cumque quidem-->
-<!--        id in consequuntur provident delectus dicta moles tiae velit perferendis ab necessitatibus cum illum quod-->
-<!--        voluptatibus architecto similique-->
-<!--      </p>-->
-<!--      &lt;!&ndash;  Liste des Taches&ndash;&gt;-->
-<!--      <ul class="text-start px-20 mt-3">-->
-<!--        <li>qwerty</li>-->
-<!--        <li>azerty</li>-->
-<!--      </ul>-->
-<!--      &lt;!&ndash;   Outils Utilises (ships)   &ndash;&gt;-->
-<!--    </div>-->
-<!--    <div class="absolute top-0 -ml-1.5 h-4 w-4 rounded-full bg-gray-600 dark:bg-amber-50"></div>-->
-<!--  </div>-->
+    </div>
+  </div>
 
 </template>
 
