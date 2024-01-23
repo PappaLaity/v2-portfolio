@@ -22,7 +22,8 @@ export default {
               </a>
             </div>
             <div class="text-start pt-2 mx-4">
-              <div class="text-2xl">{{ post.title }}</div>
+              <div class="text-xl">{{ post.title }} at <a :href="post.link_company"
+                                                          target="_blank" class="text-lg">{{ post.company_name }}</a></div>
               <div class="text-sm italic">
                 {{ post.lieu }}
               </div>
@@ -39,10 +40,10 @@ export default {
             {{ post.description }}
           </p>
           <!--  Liste des Taches-->
-          <ul class=" mt-3">
-            <li v-for="rol in post.role" :key="rol.id"
+          <ul class="list-disc mt-3">
+            <li v-for="role in post.role" :key="role.id"
             >
-              {{ rol.libelle }}
+              {{ role.libelle }}
             </li>
           </ul>
           <!--   Outils Utilises (ships)   -->
