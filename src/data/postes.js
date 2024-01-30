@@ -33,7 +33,6 @@ const postes = [
             {id: 4, tip: "MySQL"},
             {id: 2, tip: "Excel"},
             {id: 5, tip: "Git"},
-            // {id: 2, tip: "Excel"},
         ],
         lieu: "Dakar,Senegal",
         logo_company: "data:image/png;base64,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",
@@ -46,7 +45,12 @@ const postes = [
         title: "Back End Engineer",
         description: "Description",
         periode: "2021 - 2022",
-        role: [],
+        role: [
+            {id: 1, libelle: "Maintenance, Monitoring, and Evolution of platforms"},
+            {id: 2, libelle: "Integration of Services, Update of the Database"},
+            {id: 3, libelle: "REST API Implementation"},
+            // {id: 1, libelle: ""},
+        ],
         skills: [
             {id: 1, tip: "JEE (JAVA)"},
             {id: 1, tip: "ZK"},
@@ -64,7 +68,14 @@ const postes = [
         title: "Consultant Engineer",
         description: "Description",
         periode: "2020 - 2021",
-        role: [],
+        role: [
+            {
+                id: 1, libelle: "Studies and analyzes on the request process at service level\n" +
+                    "Administrative"
+            },
+            {id: 2, libelle: "Data Model Conception and Modelization"},
+            {id: 3, libelle: "Back Office Application Making, Webservices Integration"},
+        ],
         skills: [
             {id: 1, tip: "Laravel"},
             {id: 4, tip: "MySQL"},
@@ -82,11 +93,16 @@ const postes = [
         title: "Research Engineer Internship",
         description: "Description",
         periode: "2020",
-        role: [],
+        role: [
+            {id: 1, libelle: "ETL & Data Scrapping"},
+            {id: 2, libelle: "Data lake Creation"},
+            {id: 3, libelle: "Question/Answer System Building (IA)"},
+        ],
         skills: [
             {id: 1, tip: "Python"},
-            {id: 4, tip: "ElasticSearch"},
-            {id: 5, tip: "Git"}
+            {id: 2, tip: "ElasticSearch"},
+            {id: 3, tip: "Postgres"},
+            {id: 4, tip: "Git"}
         ],
         lieu: "Remote",
         logo_company: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBhUTBxQWFhUXGRcbGBgYGRogHxohHhcYGxoYHxkdKCgjHSAnHhcaLTEkJykrLy8wHSA1ODMtNystOjcBCgoKDg0OGxAQGy0lICUtLS0tLy0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMgAyAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcBBAUDAv/EAEIQAAECBAMFBQUFBAoDAAAAAAEAAgMEBREGEiEHMUFRcRMiYYGRMkJSobFicqOzwRSi0eIVFyQ0N4KT0uHwFjZz/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFB//EADERAAICAQMCBAMHBQEAAAAAAAABAgMRBBIhMUEFE1FhInGBUpGhscHR8RQjMuHwFf/aAAwDAQACEQMRAD8AhyIi8k+hhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBF6QocSPEDYYLiTYAC5PQKTy2z7EcxBzGCG8g5zQfS+nmrRi5dEZW311f5yS+ZFeKwpBCwXXn1HsHQS19i4ZiMpAtezhod65dVp8xSZ50GcAD2WvY33gHf5qHFrloQvrm9sZJvqafBFIaXguu1WCHy8Ehp3OeQ2/QHUryrOFK1RYeadhEM+JpDh5kbvNTsljOGVWqpctims/M4azqsdF06PQanWn2p0Jz7bzoAOrjoqpNvg1nOMFuk8L7jmopRN4AxHKwcxg5gN+VzSfS9z5KNGC8RsrwQ69rHSx5FS4yXVFK767eYST/Q80UomcA4igRGt7HMXXtlcCBYcSdB5pN4AxHKwMxg5gN4a5pPpfXyVvLn6Mz/AK3T8fGufci6yj2GG4h4II0IW9SaNP1iNlp0NzyN9tw6uOg3cVRL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",
@@ -98,7 +114,11 @@ const postes = [
         title: "Software Engineer Internship",
         description: "Description",
         periode: "2019",
-        role: [],
+        role: [
+            {id: 1, libelle: "Sensor Data Visualisation on Web App"},
+            {id: 1, libelle: "Sensor Geolocation"},
+            {id: 1, libelle: "Notion of Virtual Sensor"},
+        ],
         skills: [
             {id: 1, tip: "Angular"},
             {id: 2, tip: "Spring"},

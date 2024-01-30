@@ -1,11 +1,11 @@
 <script>
 import Jobs from "@/components/carrieres/Jobs.vue";
-// import Etudes from "@/components/carrieres/Etudes.vue";
+import Etudes from "@/components/carrieres/Etudes.vue";
 
 export default {
   name: 'Carrieres',
   components: {
-    // Etudes,
+    Etudes,
     Jobs
   }
 }
@@ -19,7 +19,7 @@ export default {
     </div>
     <!--    <div class="sm:max-w-sm md:max-w-xs container mx-auto">-->
     <div class="container mx-auto">
-      <!--            <Etudes/>-->
+      <Etudes/>
     </div>
   </div>
 </template>
