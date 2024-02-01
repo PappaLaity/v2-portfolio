@@ -1,12 +1,12 @@
 <script>
 // import Post from "@/components/carrieres/Post.vue";
 import studies from "@/data/studies";
+import Etude from "@/components/carrieres/Etude.vue";
 
 
 export default {
   name: "Etudes",
-  // components: {Post},
-
+  components: {Etude},
   data: () => {
     return {
       studies,
@@ -31,26 +31,7 @@ export default {
      </span>
   </div>
   <div class="flex flex-col items-center md:flex-row px-6 md:px-20 gap-2">
-    <div v-for="post in studies" :key="post.id"
-         class="dark:bg-ternary-dark bg-gray-50 border-1 px-4 py-4 rounded-lg h-64 w-48 hover:bg-gray-400 dark:hover:bg-gray-600">
-      <!-- Logo Structures de formations-->
-      <div class="flex items-center justify-center">
-        <a :href="post.link_company" target="_blank">
-          <img :src="post.logo_company" alt="" srcset="" class="h-8 w-8 sm:h-16 sm:w-16">
-        </a>
-      </div>
-      <span class="text-sm italic dark:text-ternary-light text-ternary-dark">
-        {{ post.company_name }}
-      </span>
-      <div class="mt-2 p-2 text-center dark:text-ternary-light text-ternary-dark">
-        <p>{{ post.diploma }} {{ post.title }}</p>
-      </div>
-      <div class="p-1 italic text-ternary-dark dark:text-ternary-light">
-        <span>{{ post.periode }}</span>
-      </div>
-    </div>
-    <!--      <Post v-for="post in posts" :key="post.id" :post="post"></Post>-->
-
+    <Etude v-for="etude in studies" :key="etude.id" :etude="etude"></Etude>
   </div>
 </template>
 
