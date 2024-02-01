@@ -1,24 +1,24 @@
 const studies = [
     {
         id: 1,
-        title: "Software Engineer",
-        diploma: "Master",
-        periode: "2021 - 2022",
+        title: "Data Management & Software Engineer",
+        diploma: "MSc.",
+        periode: "2017 - 2020",
         lieu: "Saint Louis,Senegal",
         logo_company: "https://upload.wikimedia.org/wikipedia/en/d/db/Gaston_Berger_University_logo.png",
-        link_company: "#",
-        company_name: "Universite Gaston Berger de Saint Louis"
+        link_company: "https://www.ugb.sn/",
+        company_name: "Gaston Berger University"
 
     },
     {
         id: 2,
-        title: "Back End Engineer",
-        diploma: "Licence",
-        periode: "2021 - 2022",
+        title: "Information System (Bg. Physics Maths Computer Science)",
+        diploma: "BSc.",
+        periode: "2013 - 2017",
         lieu: "Saint Louis,Senegal",
         logo_company: "https://upload.wikimedia.org/wikipedia/en/d/db/Gaston_Berger_University_logo.png",
-        link_company: "#",
-        company_name: "Universite Gaston Berger de Saint Louis"
+        link_company: "https://www.ugb.sn/",
+        company_name: "Gaston Berger University"
     },
 ];
 

@@ -32,7 +32,7 @@ export default {
   </div>
   <div class="flex flex-col items-center md:flex-row px-6 md:px-20 gap-2">
     <div v-for="post in studies" :key="post.id"
-         class="dark:bg-gray-800 bg-gray-50 border-1 px-4 py-4 rounded-lg h-64 w-48 hover:bg-gray-400 dark:hover:bg-gray-400">
+         class="dark:bg-ternary-dark bg-gray-50 border-1 px-4 py-4 rounded-lg h-64 w-48 hover:bg-gray-400 dark:hover:bg-gray-600">
       <!-- Logo Structures de formations-->
       <div class="flex items-center justify-center">
         <a :href="post.link_company" target="_blank">
