@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div
-      class="bg-gray-50 dark:bg-ternary-dark hover:bg-blue-200 dark:hover:bg-gray-600 hover:cursor-pointer rounded-lg pb-4">
+      class="bg-gray-50 dark:bg-ternary-dark hover:bg-gray-400 dark:hover:bg-gray-600 hover:cursor-pointer rounded-lg pb-4">
     <div class="text-ternary-dark dark:text-ternary-light">
       <div class="mt-6 px-4">
         <div class="flex items-center justify-between">
@@ -23,7 +23,8 @@ export default {
             </div>
             <div class="text-start pt-2 mx-4">
               <div class="text-xl">{{ post.title }} at <a :href="post.link_company"
-                                                          target="_blank" class="text-lg">{{ post.company_name }}</a></div>
+                                                          target="_blank" class="text-lg">{{ post.company_name }}</a>
+              </div>
               <div class="text-sm italic">
                 {{ post.lieu }}
               </div>
