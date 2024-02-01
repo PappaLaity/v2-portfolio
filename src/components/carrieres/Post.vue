@@ -34,7 +34,7 @@ export default {
             {{ post.periode }}
           </div>
         </div>
-        <div class="mb-4 pl-16 text-start">
+        <div class="mb-1 pl-16 text-start">
 
           <!--  Description-->
           <p>
@@ -47,16 +47,16 @@ export default {
               {{ role.libelle }}
             </li>
           </ul>
-          <!--   Outils Utilises (ships)   -->
-          <div>
-            <p class="py-2 space-x-1 space-y-1">
+        </div>
+        <!--   Outils Utilises (ships)   -->
+        <div class="mb-3 md:pl-16 text-start">
+          <p class="py-2 space-x-1 space-y-1">
               <span
                   v-for="tips in post.skills" :key="tips.id"
                   class="inline-block px-2 py-1 rounded-lg bg-gray-300 dark:bg-gray-800"
               >{{ tips.tip }}
               </span>
-            </p>
-          </div>
+          </p>
         </div>
 
       </div>
