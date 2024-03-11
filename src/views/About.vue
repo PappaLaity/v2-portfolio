@@ -1,7 +1,6 @@
 <script>
 import AboutMe from '@/components/about/AboutMe';
 import AboutCounter from '@/components/about/AboutCounter';
-// import AboutServices from '@/components/about/AboutServices.vue';
 import feather from 'feather-icons';
 import Skills from "@/components/about/Skills.vue";
 

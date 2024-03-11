@@ -1,5 +1,5 @@
 <script>
-import ThemeSwitcher from '../ThemeSwitcher';
+// import ThemeSwitcher from '../ThemeSwitcher';
 import HireMeModal from '../HireMeModal.vue';
 import feather from 'feather-icons';
 import AppHeaderLinks from './AppHeaderLinks.vue';
@@ -7,7 +7,7 @@ import AppHeaderLinks from './AppHeaderLinks.vue';
 
 export default {
   components: {
-    ThemeSwitcher,
+    // ThemeSwitcher,
     HireMeModal,
     AppHeaderLinks,
     // Button,
@@ -101,11 +101,11 @@ export default {
         </div>
 
         <!-- Theme switcher small screen -->
-        <theme-switcher
-            :theme="theme"
-            @themeChanged="updateTheme"
-            class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
-        />
+        <!--        <theme-switcher-->
+        <!--            :theme="theme"-->
+        <!--            @themeChanged="updateTheme"-->
+        <!--            class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"-->
+        <!--        />-->
 
         <!-- Small screen hamburger menu -->
         <div class="sm:hidden">
@@ -154,11 +154,11 @@ export default {
         <!--				</div>-->
 
         <!-- Theme switcher large screen -->
-        <theme-switcher
-            :theme="theme"
-            @themeChanged="updateTheme"
-            class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
-        />
+        <!--        <theme-switcher-->
+        <!--            :theme="theme"-->
+        <!--            @themeChanged="updateTheme"-->
+        <!--            class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"-->
+        <!--        />-->
       </div>
     </div>
 
